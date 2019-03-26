@@ -12,7 +12,6 @@ export const getItems = () => dispatch => {
         })
     )
 }
-
 export const deleteItem = _id => dispatch => {
     axios.delete(`/api/items/${_id}`).then(res => 
         dispatch({
